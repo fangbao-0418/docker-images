@@ -1,0 +1,1 @@
+docker run --rm -d --name node-server2 -p 3002:3000 node-server
