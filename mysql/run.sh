@@ -1,1 +1,1 @@
- docker run --rm --name mysql -p 3307:3306 -v /Users/fb/docker/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -d mysql:8-debian
+ docker run --platform linux/x86_64 --rm --name mysql -p 3307:3306 -v "$(pwd)/data:/var/lib/mysql" -e MYSQL_ROOT_PASSWORD=root -d mysql:8-debian
